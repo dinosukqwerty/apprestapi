@@ -1,3 +1,3 @@
 module.export= {
-    'rahasia' : rahasiaku,
+    'rahasia' : 'rahasiaku',
 }
