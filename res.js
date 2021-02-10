@@ -1,12 +1,16 @@
 'use strict';
 
 exports.ok = function(values, res){
-    var data = {
-        'data' : 200,
-        'values': values
-    }
+    // var data = {
+    //     'data' : 200,
+    //     'values': values
+    // }
+    //  res.json(data);
+    //  res.end();
+
+    var data = values
      res.json(data);
-     res.end();
+    res.end();
 }
 
 //NESTED untuk matakuliah 
@@ -30,11 +34,17 @@ exports.oknested = function(values, res){
             return akumulasikan;
         },{});
 
+        // var data = {
+        //     'data' : 200,
+        //     'values': hasil
+        // };
+
+        // res.json(data);
+        // res.end();
         var data = {
-            'data' : 200,
             'values': hasil
         };
-
+        
         res.json(data);
         res.end();
     }
